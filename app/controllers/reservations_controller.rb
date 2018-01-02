@@ -19,7 +19,7 @@ class ReservationsController < ApplicationController
 
   def update
     @reservation = Reservation.find(params[:id])
-    @reservation.rating = params[:rating]
+
   end
 
   def destroy
