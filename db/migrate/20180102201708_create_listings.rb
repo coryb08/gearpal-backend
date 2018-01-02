@@ -7,8 +7,8 @@ class CreateListings < ActiveRecord::Migration[5.1]
       t.integer :rating
       t.boolean :availability
       t.string :location
+      t.string :condition
       t.belongs_to :user, foreign_key: true
-
       t.timestamps
     end
   end
