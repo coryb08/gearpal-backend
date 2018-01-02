@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  username: MyString
+  location: MyString
+  borrower_rating: 1
+  lister_rating: MyString
+  picture: MyString
+  reservations: 
+  listings: 
+
+two:
+  username: MyString
+  location: MyString
+  borrower_rating: 1
+  lister_rating: MyString
+  picture: MyString
+  reservations: 
+  listings: 
