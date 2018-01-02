@@ -17,6 +17,11 @@ class ListingsController < ApplicationController
     end
   end
 
+  def update
+    @listing = Listing.find(params[:id])
+    @listing.rating = params[:rating]
+  end
+
   def destroy
     @listing = Listing.find(params[:id])
     @listing.destroy
@@ -24,6 +29,6 @@ class ListingsController < ApplicationController
 
   private
   def listing_params
-    params.require(:listing).permit(:title, :picture, :price, :availability, :location)
+    params.require(:listing).permit(:title, :picture, :condition, :price, :availability, :location)
   end
 end
