@@ -6,9 +6,7 @@ class CreateUsers < ActiveRecord::Migration[5.1]
       t.integer :borrower_rating
       t.string :lister_rating
       t.string :picture
-      t.has_many :reservations
-      t.has_many :listings
-
+    
       t.timestamps
     end
   end
