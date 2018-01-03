@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20180103183745) do
     t.string "location"
     t.string "condition"
     t.string "name"
+    t.integer "rating"
     t.string "lister_type"
     t.bigint "lister_id"
     t.datetime "created_at", null: false

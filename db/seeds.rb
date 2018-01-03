@@ -11,19 +11,18 @@ u1 = User.create(username: "dansbands", picture: "https://avatars3.githubusercon
 u2 = User.create(username: "coryb08", picture: "https://avatars0.githubusercontent.com/u/29523975?s=460&v=4")
 u3 = User.create(username: "erickalexander", picture: "https://avatars2.githubusercontent.com/u/23504970?s=460&v=4")
 
+
+
 Listing.destroy_all
 
-listing1 = Listing.create(lister: u1, title: "Shure SM 58", picture: "https://522bb370f5443d4fe5b9-f62de27af599bb6703e11b472beadbcc.ssl.cf2.rackcdn.com/product/list_image/10785/prod_img_sm58_m.jpg", price: 10, availability: true, location: "Staten Island, NY", condition: 'Fair')
-listing2 = Listing.create(lister: u1, title: "Shure SM 87A", picture: "https://522bb370f5443d4fe5b9-f62de27af599bb6703e11b472beadbcc.ssl.cf2.rackcdn.com/product/list_image/7686/prod_img_sm87a_m.jpg", price: 20, availability: true, location: "Brooklyn, NY", condition: 'Worn')
-listing3 = Listing.create(lister: u1, title: "Shure SM 58", picture: "https://522bb370f5443d4fe5b9-f62de27af599bb6703e11b472beadbcc.ssl.cf2.rackcdn.com/product/list_image/10785/prod_img_sm58_m.jpg", price: 10, availability: true, location: "Staten Island, NY", condition: 'Fair')
-listing4 = Listing.create(lister: u1, title: "Shure SM 87A", picture: "https://522bb370f5443d4fe5b9-f62de27af599bb6703e11b472beadbcc.ssl.cf2.rackcdn.com/product/list_image/7686/prod_img_sm87a_m.jpg", price: 20, availability: true, location: "Brooklyn, NY", condition: 'Worn')
-listing5 = Listing.create(lister: u1, title: "Shure SM 58", picture: "https://522bb370f5443d4fe5b9-f62de27af599bb6703e11b472beadbcc.ssl.cf2.rackcdn.com/product/list_image/10785/prod_img_sm58_m.jpg", price: 10, availability: true, location: "Staten Island, NY", condition: 'Fair')
-listing6 = Listing.create(lister: u1, title: "Shure SM 87A", picture: "https://522bb370f5443d4fe5b9-f62de27af599bb6703e11b472beadbcc.ssl.cf2.rackcdn.com/product/list_image/7686/prod_img_sm87a_m.jpg", price: 20, availability: true, location: "Brooklyn, NY", condition: 'Worn')
-listing7 = Listing.create(lister: u1, title: "Shure SM 58", picture: "https://522bb370f5443d4fe5b9-f62de27af599bb6703e11b472beadbcc.ssl.cf2.rackcdn.com/product/list_image/10785/prod_img_sm58_m.jpg", price: 10, availability: true, location: "Staten Island, NY", condition: 'Fair')
-listing8 = Listing.create(lister: u1, title: "Shure SM 87A", picture: "https://522bb370f5443d4fe5b9-f62de27af599bb6703e11b472beadbcc.ssl.cf2.rackcdn.com/product/list_image/7686/prod_img_sm87a_m.jpg", price: 20, availability: true, location: "Brooklyn, NY", condition: 'Worn')
-
-
-
+listing1 = Listing.create(lister: u1, title: "Shure SM 58", picture: "https://522bb370f5443d4fe5b9-f62de27af599bb6703e11b472beadbcc.ssl.cf2.rackcdn.com/product/list_image/10785/prod_img_sm58_m.jpg", price: 10, availability: true, location: "Staten Island, NY", condition: 'Fair', rating: 3)
+listing2 = Listing.create(lister: u1, title: "Shure SM 87A", picture: "https://522bb370f5443d4fe5b9-f62de27af599bb6703e11b472beadbcc.ssl.cf2.rackcdn.com/product/list_image/7686/prod_img_sm87a_m.jpg", price: 20, availability: true, location: "Brooklyn, NY", condition: 'Worn', rating: 2)
+listing3 = Listing.create(lister: u1, title: "Shure SM 58", picture: "https://522bb370f5443d4fe5b9-f62de27af599bb6703e11b472beadbcc.ssl.cf2.rackcdn.com/product/list_image/10785/prod_img_sm58_m.jpg", price: 10, availability: true, location: "Staten Island, NY", condition: 'Fair',rating: 3)
+listing4 = Listing.create(lister: u1, title: "Shure SM 87A", picture: "https://522bb370f5443d4fe5b9-f62de27af599bb6703e11b472beadbcc.ssl.cf2.rackcdn.com/product/list_image/7686/prod_img_sm87a_m.jpg", price: 20, availability: true, location: "Brooklyn, NY", condition: 'Worn',rating: 2)
+listing5 = Listing.create(lister: u1, title: "Shure SM 58", picture: "https://522bb370f5443d4fe5b9-f62de27af599bb6703e11b472beadbcc.ssl.cf2.rackcdn.com/product/list_image/10785/prod_img_sm58_m.jpg", price: 10, availability: true, location: "Staten Island, NY", condition: 'Fair',rating: 3)
+listing6 = Listing.create(lister: u1, title: "Shure SM 87A", picture: "https://522bb370f5443d4fe5b9-f62de27af599bb6703e11b472beadbcc.ssl.cf2.rackcdn.com/product/list_image/7686/prod_img_sm87a_m.jpg", price: 20, availability: true, location: "Brooklyn, NY", condition: 'Worn',rating: 3)
+listing7 = Listing.create(lister: u1, title: "Shure SM 58", picture: "https://522bb370f5443d4fe5b9-f62de27af599bb6703e11b472beadbcc.ssl.cf2.rackcdn.com/product/list_image/10785/prod_img_sm58_m.jpg", price: 10, availability: true, location: "Staten Island, NY", condition: 'Fair',rating: 3)
+listing8 = Listing.create(lister: u1, title: "Shure SM 87A", picture: "https://522bb370f5443d4fe5b9-f62de27af599bb6703e11b472beadbcc.ssl.cf2.rackcdn.com/product/list_image/7686/prod_img_sm87a_m.jpg", price: 20, availability: true, location: "Brooklyn, NY", condition: 'Worn',rating: 1)
 
 Reservation.destroy_all
 

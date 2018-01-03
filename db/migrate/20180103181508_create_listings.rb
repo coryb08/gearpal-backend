@@ -8,6 +8,7 @@ class CreateListings < ActiveRecord::Migration[5.1]
       t.string :location
       t.string :condition
       t.string :name
+      t.integer :rating
       t.references :lister, polymorphic: true
 
       t.timestamps
