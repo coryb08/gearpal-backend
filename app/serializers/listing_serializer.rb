@@ -1,5 +1,5 @@
 class ListingSerializer < ActiveModel::Serializer
-  attributes :id, :title, :picture, :price, :rating, :availability, :location, :condition
-  belongs_to :user
+  attributes :id, :title, :picture, :price, :availability, :location, :condition, :name
+  belongs_to :lister, polymorphic: true
   has_many :reservations
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180102202445) do
+ActiveRecord::Schema.define(version: 20180103183745) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,23 +28,28 @@ ActiveRecord::Schema.define(version: 20180102202445) do
     t.string "title"
     t.string "picture"
     t.integer "price"
-    t.integer "rating"
     t.boolean "availability"
     t.string "location"
     t.string "condition"
-    t.bigint "user_id"
+    t.string "name"
+    t.string "lister_type"
+    t.bigint "lister_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_listings_on_user_id"
+    t.index ["lister_type", "lister_id"], name: "index_listings_on_lister_type_and_lister_id"
+    t.index ["name"], name: "index_listings_on_name"
   end
 
   create_table "reservations", force: :cascade do |t|
     t.datetime "start_date"
     t.datetime "end_date"
-    t.bigint "user_id"
+    t.string "name"
+    t.string "reserver_type"
+    t.bigint "reserver_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_reservations_on_user_id"
+    t.index ["name"], name: "index_reservations_on_name"
+    t.index ["reserver_type", "reserver_id"], name: "index_reservations_on_reserver_type_and_reserver_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -59,6 +64,4 @@ ActiveRecord::Schema.define(version: 20180102202445) do
 
   add_foreign_key "listing_reservations", "listings"
   add_foreign_key "listing_reservations", "reservations"
-  add_foreign_key "listings", "users"
-  add_foreign_key "reservations", "users"
 end

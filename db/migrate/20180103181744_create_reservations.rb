@@ -3,9 +3,11 @@ class CreateReservations < ActiveRecord::Migration[5.1]
     create_table :reservations do |t|
       t.datetime :start_date
       t.datetime :end_date
-      t.belongs_to :user, foreign_key: true
+      t.string :name
+      t.references :reserver, polymorphic: true
 
       t.timestamps
     end
+    add_index :reservations, :name
   end
 end

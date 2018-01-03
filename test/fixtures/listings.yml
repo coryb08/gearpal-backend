@@ -4,16 +4,20 @@ one:
   title: MyString
   picture: MyString
   price: 1
-  rating: 1
   availability: false
   location: MyString
-  user: one
+  condition: MyString
+  name: MyString
+  lister: one
+  lister_type: Lister
 
 two:
   title: MyString
   picture: MyString
   price: 1
-  rating: 1
   availability: false
   location: MyString
-  user: two
+  condition: MyString
+  name: MyString
+  lister: two
+  lister_type: Lister

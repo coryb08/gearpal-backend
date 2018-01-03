@@ -1,5 +1,5 @@
 class ReservationSerializer < ActiveModel::Serializer
-  attributes :id, :start_date, :end_date
-  belongs_to :user
+  attributes :id, :start_date, :end_date, :name
+  belongs_to :reserver, polymorphic: true
   has_many :listings
 end
