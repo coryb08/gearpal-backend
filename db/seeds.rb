@@ -7,9 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.destroy_all
-u1 = User.create(username: "dansbands", picture: "https://avatars3.githubusercontent.com/u/28971854?s=460&v=4")
-u2 = User.create(username: "coryb08", picture: "https://avatars0.githubusercontent.com/u/29523975?s=460&v=4")
-u3 = User.create(username: "erickalexander", picture: "https://avatars2.githubusercontent.com/u/23504970?s=460&v=4")
+u1 = User.create(username: "dansbands", location: "Manhattan", borrower_rating: 4.3, lister_rating: 4.5, picture: "https://avatars3.githubusercontent.com/u/28971854?s=460&v=4")
+u2 = User.create(username: "coryb08", location: "Brooklyn", borrower_rating: 4.5, lister_rating: 4.7, picture: "https://avatars0.githubusercontent.com/u/29523975?s=460&v=4")
+u3 = User.create(username: "erickalexander", location: "Staten Island", borrower_rating: 4.7, lister_rating: 4.9, picture: "https://avatars2.githubusercontent.com/u/23504970?s=460&v=4")
 
 Listing.destroy_all
 
