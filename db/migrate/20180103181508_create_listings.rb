@@ -4,12 +4,15 @@ class CreateListings < ActiveRecord::Migration[5.1]
       t.string :title
       t.string :picture
       t.integer :price
-      t.integer :rating
       t.boolean :availability
       t.string :location
       t.string :condition
-      t.belongs_to :user, foreign_key: true
+      t.string :name
+      t.integer :rating
+      t.references :lister, polymorphic: true
+
       t.timestamps
     end
+    add_index :listings, :name
   end
 end
