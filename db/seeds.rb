@@ -13,8 +13,10 @@ u3 = User.create(username: "erickalexander", picture: "https://avatars2.githubus
 
 Listing.destroy_all
 
-listing1 = Listing.create(user: u1, title: "Shure SM 58", picture: "https://522bb370f5443d4fe5b9-f62de27af599bb6703e11b472beadbcc.ssl.cf2.rackcdn.com/product/list_image/10785/prod_img_sm58_m.jpg", price: 10, availability: true)
-listing2 = Listing.create(user: u1, title: "Shure SM 87A", picture: "https://522bb370f5443d4fe5b9-f62de27af599bb6703e11b472beadbcc.ssl.cf2.rackcdn.com/product/list_image/7686/prod_img_sm87a_m.jpg", price: 20, availability: true)
+listing1 = Listing.create(user: u1, title: "Shure SM 58", picture: "https://522bb370f5443d4fe5b9-f62de27af599bb6703e11b472beadbcc.ssl.cf2.rackcdn.com/product/list_image/10785/prod_img_sm58_m.jpg", price: 10, availability: true, location: "Staten Island, NY", condition: 'Fair', rating: 4.5)
+listing2 = Listing.create(user: u1, title: "Shure SM 87A", picture: "https://522bb370f5443d4fe5b9-f62de27af599bb6703e11b472beadbcc.ssl.cf2.rackcdn.com/product/list_image/7686/prod_img_sm87a_m.jpg", price: 20, availability: true, location: "Brooklyn, NY", condition: 'Worn', rating: 3)
+listing3 = Listing.create(user: u1, title: "Shure SM 58", picture: "https://522bb370f5443d4fe5b9-f62de27af599bb6703e11b472beadbcc.ssl.cf2.rackcdn.com/product/list_image/10785/prod_img_sm58_m.jpg", price: 10, availability: true, location: "Staten Island, NY", condition: 'Fair', rating: 4.5)
+listing4 = Listing.create(user: u1, title: "Shure SM 87A", picture: "https://522bb370f5443d4fe5b9-f62de27af599bb6703e11b472beadbcc.ssl.cf2.rackcdn.com/product/list_image/7686/prod_img_sm87a_m.jpg", price: 20, availability: true, location: "Brooklyn, NY", condition: 'Worn', rating: 3)
 
 Reservation.destroy_all
 
