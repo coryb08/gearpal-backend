@@ -7,6 +7,7 @@ class ReservationsController < ApplicationController
 
   def create
     @reservation = Reservation.new(reservation_params)
+    byebug
     # user = User.all.find{|i| i.id === @reservation.userId}
     # @reservation.user_id = user
     if @reservation.save
@@ -29,6 +30,6 @@ class ReservationsController < ApplicationController
 
   private
   def reservation_params
-    params.require(:reservation).permit(:start_date, :end_date, :reserver)
+    params.require(:reservation).permit(:start_date, :end_date, :reserver_id, :reserver_type, :name)
   end
 end
