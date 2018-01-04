@@ -56,8 +56,8 @@ ActiveRecord::Schema.define(version: 20180103183745) do
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "location"
-    t.integer "borrower_rating"
-    t.string "lister_rating"
+    t.float "borrower_rating"
+    t.float "lister_rating"
     t.string "picture"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

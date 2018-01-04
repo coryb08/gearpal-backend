@@ -3,10 +3,10 @@ class CreateUsers < ActiveRecord::Migration[5.1]
     create_table :users do |t|
       t.string :username
       t.string :location
-      t.integer :borrower_rating
-      t.string :lister_rating
+      t.float :borrower_rating
+      t.float :lister_rating
       t.string :picture
-    
+
       t.timestamps
     end
   end
