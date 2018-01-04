@@ -47,6 +47,7 @@ ActiveRecord::Schema.define(version: 20180103183745) do
     t.string "name"
     t.string "reserver_type"
     t.bigint "reserver_id"
+    t.integer "listing_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["name"], name: "index_reservations_on_name"
