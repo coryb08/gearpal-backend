@@ -31,4 +31,4 @@ listing12 = Listing.create(lister: u1, title: "Shure SM 87A", picture: "https://
 
 Reservation.destroy_all
 
-reservation1 = Reservation.create(reserver: u2, start_date: "2018-01-02 19:00:46Z" , end_date:"2018-01-03 19:00:46Z", listings: [listing1])
+reservation1 = Reservation.create(reserver: u2, name:listing1.title, start_date: "2018-01-02 19:00:46Z" , end_date:"2018-01-03 19:00:46Z", listings: [listing1])

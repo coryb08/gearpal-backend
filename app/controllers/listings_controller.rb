@@ -1,8 +1,8 @@
 class ListingsController < ApplicationController
   def index
 
-    @listing = Listing.all
-    render json: @listing
+    @listings = Listing.all
+    render json: @listings
   end
 
   def create
@@ -29,6 +29,6 @@ class ListingsController < ApplicationController
 
   private
   def listing_params
-    params.require(:listing).permit(:title, :picture, :condition, :price, :availability, :location, :lister)
+    params.require(:listing).permit(:title, :picture, :condition, :price, :location, :lister_type, :lister_id)
   end
 end
