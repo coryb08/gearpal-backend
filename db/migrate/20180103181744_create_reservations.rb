@@ -4,6 +4,7 @@ class CreateReservations < ActiveRecord::Migration[5.1]
       t.datetime :start_date
       t.datetime :end_date
       t.string :name
+      t.integer :listing_id
       t.references :reserver, polymorphic: true
 
       t.timestamps
